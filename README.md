@@ -1,22 +1,23 @@
 # CHASING RIOTERS - Parviendrez-vous à casser du manifestant ?
 
-## 1. Présentation du jeu (trois lignes)
+## 1. Présentation du jeu
 
 Dans  Chasing Rioters , on dirige une file de CRS qui poursuit des manifestants à la place de manger des pommes.
 Chaque personnage capturé produit un effet différent (points, allongement ou pénalité), tandis que des obstacles, un adversaire autonome et des publicités viendront régulièrement gêner votre progression.
 Le jeu propose des animations en pixel art, des bruitages, des réglages personnalisables et un mode à deux joueurs.
 
-Le projet utilise volontairement l'humour et l'absurde pour évoquer les tensions entre forces de l'ordre et manifestants. Derrière la caricature, je voulais aussi rappeler que les personnes des deux côtés sont humaines, et qu'il serait préférable de pouvoir dialoguer plutôt que de s'affronter. L'idée m'est venue en regardant le Snake du cours : « Et si les pommes étaient des gens ? Et si le serpent était une file de CRS ? ». Et comme le professeur ne m'a pas dit "non, s'il te plaît, un peu de sérieux Boris", 
+L'idée m'est venue en regardant le Snake du cours que nous suivions à l'IUT avec Mr. BELER : *« Et si les pommes étaient des gens ? Et le serpent une file de CRS ? »*. Et comme le professeur ne m'a pas dit *"non, s'il te plaît, un peu de sérieux Boris je t'en supplie"* quand je lui en ai parlé...
 
 ### Capture d'écran
 
 ![Capture d'écran de Chasing Rioters pendant une partie](partie.png)
+Tadaaaaam !
 
 ### Comment jouer ?
 
-Ouvrir `index.html` dans un navigateur (ou accéder au site directement hébergé sur GitHub), puis appuyer sur une touche pour commencer. Les flèches du clavier et/ou les touches ZQSD ou IJKL permettent de diriger les joueurs, selon la configuration choisie dans les réglages. Le bouton  Un joueur / Deux joueurs  permet de changer de mode ;  R  recommence une partie.Espace la démarre.Enfin, le panneau ⚙ permet de choisir l'apparence des CRS, la disposition des touches, la couleur de fond et la musique. 
+Ouvrir `index.html` dans un navigateur (ou accéder au [site](https://borislehachoir.github.io/chasing-rioters/) directement hébergé sur GitHub), puis appuyer sur une touche pour commencer. Les flèches du clavier et/ou les touches ZQSD ou IJKL permettent de diriger les joueurs, selon la configuration choisie dans les réglages. Le bouton  Un joueur / Deux joueurs  permet de changer de mode ;  R  recommence une partie. Espace la démarre. Enfin, le panneau ⚙ permet de choisir l'apparence des CRS, la disposition des touches, la couleur de fond et la musique. 
 
-Le but est de capturer les personnages qui rapportent des points sans heurter les obstacles, les autres occupants ou sa propre file.
+Le but est de capturer les manifestants et ainsi gagner des points sans heurter les obstacles, les autres occupants ou sa propre file.
 
 ## 2. Point de départ et démarche
 
