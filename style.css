@@ -2,6 +2,29 @@
       color-scheme: dark;
     }
 
+    /*Personalisation scollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00e5f0;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #00e5f0;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3dbe8b;
+    border-radius: 4px;
+}
+
+
     body {
       margin: 0;
       min-height: 100vh;
@@ -120,6 +143,12 @@
       padding: .25rem;
     }
 
+    #panneau select:hover {
+
+  background: #1b3f31;
+
+    }
+
     #intro {
   width: min(420px, 85vw);
   padding: 30px;
@@ -141,11 +170,15 @@
   letter-spacing: 3px;
 }
 
-#intro button {
+#intro .btn {
   background: #00e5f0;
   color: #08121a;
   border: 0;
   padding: 12px 20px;
   cursor: pointer;
   font-weight: bold;
+}
+
+#intro .btn:hover {
+  background: #3dbe8b;
 }
