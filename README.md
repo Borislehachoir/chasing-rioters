@@ -287,6 +287,7 @@ Ce prompt servait à définir le  timbre et l'interprétation  de la voix, pas �
 -  `piege.mp3`  : effet d'explosion récupéré en ligne, puis intégré par mes soins ; je n'ai malheureusement pas conservé l'URL de la source.
 -  `willofthepeople.mp3`  : *Will of the People* - Muse .
 -  `hungergames.mp3`  : *The Hanging Tree* -interprétation du  Danish National Symphony Orchestra avec Andrea Lykke .
+- `modale` : [original trouvé sur FreeFrontEnd]( https://freefrontend.com/css-modal-windows/#2026-03-03-cyberpunk-glitch-upgrade-modal-l)
 
 Ces musiques et extraits sont des œuvres tierces ; leur intégration dans un projet scolaire ne signifie pas qu'ils sont libres de droits. Le détail des sources (niveau liens internet) est également consigné dans `README-inspirations.md` du dossier `inspirations`.
 

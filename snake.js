@@ -167,9 +167,12 @@ class Serpent {
 class MiniSerpent extends Serpent {
   constructor(x, y) {
     super(x, y, 1, { img: IMG_CRS, filtre: 'hue-rotate(90deg) saturate(3)' });
+    this.n = 0;
   }
 
   agir(plateau) {
+    if (this.n++ % 2) return;
+
     if (Math.random() < 0.2) this.tourner(...auHasard());
     const c = plateau.caseSuivante(this.tete, this.dx, this.dy);
     if (plateau.occupants.some(o => o.occupe(c.x, c.y))) this.tourner(...auHasard());
@@ -516,7 +519,7 @@ class Plateau {
     }
 
     ctx.fillStyle = '#7fa3b8';
-    ctx.font = '16px system-ui, sans-serif';
+    ctx.font = '22px system-ui, sans-serif';
     this.serpents.forEach((s, i) => {
       const nom = this.serpents.length > 1 ? 'J' + (i + 1) : 'Score';
       ctx.textAlign = i === 0 ? 'left' : 'right';
@@ -555,8 +558,10 @@ class Plateau {
 const canvas = document.getElementById('jeu');
 const plateau = new Plateau(COLONNES, LIGNES, canvas.getContext('2d'), 1);
 window.plateau = plateau;
+document.getElementById('intro').showModal();
 
 document.addEventListener('keydown', e => {
+  if (document.getElementById('intro').open) return;
   if (e.target.tagName === 'SELECT') return;
   for (const pilote of plateau.pilotes) pilote.touche(e.key);
   if (e.key === 'r' || e.key === 'R') plateau.rejouer();
