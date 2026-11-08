@@ -547,6 +547,8 @@ class Plateau {
   }
 }
 
+/* ça serait fun de pouvoir avoir des messages personnalisés suivant qui on a touché avec le serpent */
+
 
 /* ============================================================
    LE DÉMARRAGE
