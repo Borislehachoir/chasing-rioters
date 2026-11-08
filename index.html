@@ -34,26 +34,36 @@
     <label>Arrière-plan
       <select id="fond"></select>
     </label>
-    <select id="musique">
-      <option value="willofthepeople">Muse - Will of the People</option>
-      <option value="hungergames">Hunger Games - The Hanging Tree</option>
-      <option value="noheavennohell"> Alex Norre - No Heaven, No Hell</option>
-    </select>
+    <label> Choix de la musique
+      <select id="musique">
+        <option value="willofthepeople">Muse - Will of the People</option>
+        <option value="hungergames">Hunger Games - The Hanging Tree</option>
+        <option value="noheavennohell"> Alex Norre - No Heaven, No Hell</option>
+      </select>
+    </label>
   </div>
 
   <dialog id="intro">
     <h2>CHASING RIOTERS</h2>
     <h3>Parviendrez-vous à casser du manifestant ?</h3>
+    <h4>VOTRE MISSION </h4>
     <p>Nous sommes le 17 octobre 2027, et la France est au bord de la guerre civile depuis plusieurs mois.
       Des milliers de gens sortent dans
       la rue tous les jours, et votre compagnie de CRS est plus que jamais sollicitée.</p>
-    <p>La seule instruction de votre commandant ? <i>"Survivez le plus longtemps possible. Quand on attaque la France,
-        la France contre-attaque ! Taïaut ! "</i> </p>
+    <p> Une petite milice armée s'est composée sous le nom de Forces de l'Armée Rouge Marxiste (FARM), composé d'anciens
+      collègues ayant rejoint les manifestants. Evitez le plus possible d'entrer en contact avec eux.</p>
+    <p>La seule instruction de votre commandant ?
+      <i>"Survivez le plus longtemps possible. Evitez les manifestants
+        cagoulés et les murs de poubelles en feu. Quand on attaque la France,
+        la France contre-attaque ! Taïaut ! "</i>
+    </p> <br>
     <hr>
+    <h4>CONTROLES</h4>
     <p>ESPACE — Commencer</p>
     <p>R — Rejouer</p>
     <p>Flèches (ZQSD pour Joueur 2)— Se déplacer</p>
     <p>⚙ — Modifier les contrôles, les skins et la musique</p>
+    <hr>
     <button onclick="intro.close()" class="btn">J'AI COMPRIS</button>
   </dialog>
 

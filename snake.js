@@ -104,6 +104,7 @@ class Serpent {
     this.vivant = true;
     this.score = 0;
     this.skin = skin;
+    this.n = 0;
   }
 
   get tete() {
@@ -146,6 +147,7 @@ class Serpent {
 
   avance(plateau) {
     const suivante = plateau.caseSuivante(this.tete, this.dx, this.dy);
+    if (this.n++ % 1) return;
 
     if (suivante === null || this.occupe(suivante.x, suivante.y)) {
       this.vivant = false;
@@ -171,7 +173,7 @@ class MiniSerpent extends Serpent {
   }
 
   agir(plateau) {
-    if (this.n++ % 2) return;
+    if (this.n++ % 3) return;
 
     if (Math.random() < 0.2) this.tourner(...auHasard());
     const c = plateau.caseSuivante(this.tete, this.dx, this.dy);
